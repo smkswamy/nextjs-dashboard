@@ -133,3 +133,9 @@ export async function authenticate(
     throw error;
   }
 }
+
+export async function signInWithGoogle(provider: string) {
+  if (provider === 'google') {
+    await signIn('google');
+  }
+}
